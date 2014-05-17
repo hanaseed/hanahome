@@ -1,8 +1,33 @@
----
-layout: default
-title: 하나의 씨앗 교회
----
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
 
+  <title>하나의 씨앗 교회</title>
+
+  <style type="text/css">
+  @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+  </style>
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<div id="nav" class="fixed">
+<ul>
+  <li class="narrow"><a href="#service">예배</a></li>
+  <li class="narrow"><a href="#logos">말씀</a></li>
+  <li class="narrow"><a href="#pastor">목회자</a></li>
+  <li class="narrow"><a href="#hope">바라봄</a></li>
+  <li class="wide"><a href="#gather">겨자씨모임</a></li>  
+
+</ul>
+
+</div>
+
+<!-- content begins -->
 <div class="content">
 
 <div>
@@ -105,14 +130,14 @@ title: 하나의 씨앗 교회
   <div class="info">
     <img src="img/share.png" style="width:212px;">
     
-    <h3>금요모임</h3>
+    <h3>겨자씨 모임</h3>
     <p>
       매주 금요일 6:30pm   
     </p>
 
     <h3>모임장소</h3>
     <p>
-      1186 Almanor Ln, Palo Alto 95303
+      1186 Almanor Ln, Palo Alto 94303
     </p>
 
     <p>
@@ -144,3 +169,56 @@ title: 하나의 씨앗 교회
 <img src="img/white-logo.png" class="logo">
 
 </div>
+<!-- content ends -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>
+  function isMobile() { 
+    if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)
+      || navigator.userAgent.match(/Opera Mini/i)
+      || navigator.userAgent.match(/IEMobile/i)
+      )
+    {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  $(document).ready(function() {
+    var h = $(window).height();
+    var w = $(window).width();
+
+    if (isMobile())
+    {
+      var ratio = parseFloat(w) / parseFloat(h);
+
+      $('body').css('background-position', 'top center');
+
+      // depending on the window orientation
+      // find different ways to stretch background image
+      if (ratio > 3.0/2.0)
+      {
+        // wide orientation; stretch width, height follows
+        $('body').css('background-size', w + 'px auto');
+      }
+      else
+      {
+        // vertical orientation; stretch height, width follows
+       $('body').css('background-size', 'auto ' + h + 'px');
+      }
+    }
+    
+    // next content to follow should skip over by a screenful
+    $('.content').css('margin-top', h + 'px');
+  });
+</script>
+
+</body>
+</html>

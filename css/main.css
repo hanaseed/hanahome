@@ -37,11 +37,14 @@ body {
 
 #nav li {
   float:left;
-  width:70px;
   list-style:none;
   text-align:left;
   font-family:'courier';
   font-weight:bold;
+}
+
+#nav li.narrow, #nav li.wide {
+  width:70px;
 }
 
 #nav ul {
@@ -159,7 +162,6 @@ and (max-device-width : 480px) {
   #nav li {
     padding-left:0;
     float:left;
-    width:50px;
     text-indent:0;
     list-style:none;
     text-align:left;
@@ -167,9 +169,18 @@ and (max-device-width : 480px) {
     font-size:14px;
   }
 
+  #nav li.narrow {
+    width:50px;
+  }
+
+  #nav li.wide {
+    width:70px;
+  }
+
   #nav ul {
     margin-top:8px;
-    margin-left:0px;
+    margin-left:10px;
+    padding-left:10px;
     margin-right:auto;
   }
 
