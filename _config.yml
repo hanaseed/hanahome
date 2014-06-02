@@ -1,5 +1,5 @@
 name: Hana Seed Blog
-url: "http://hanaseed.org/blog"
+url: "http://hanaseed.org"
 description: "Hana Seed Church Blog"
 markdown: redcarpet
 timezone: America/Los_Angeles
