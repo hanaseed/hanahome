@@ -1,13 +1,16 @@
 ---
-layout: default
+layout: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
-
-<div>
-{{post.excerpt}}
+<div class="entry">
+  <h2>{{ page.title }}</h2>
+  <div class="author">
+    {{ page.author }}
+  </div>
+  <div class="date-posted">
+    {{ page.date | date: '%B %d, %Y %I:%M %p' }} PST
+  </div>
+  <div>
+    {{ content }}
+  </div>
 </div>

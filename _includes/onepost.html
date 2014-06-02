@@ -1,0 +1,13 @@
+{% include identity.html %}
+
+<div class="entry">
+
+  <h2>{{post.title}}</h2>
+  <div class="author">{{ post.author }}</div>
+  <div class="date-posted">
+    &mdash; {{ post.date | date: '%B %d, %Y %I:%M %p' }} PST
+  </div>
+  <div class="article">
+    {{ content }}
+  </div>
+</div> <!-- end of entry -->

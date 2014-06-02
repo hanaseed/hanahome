@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+
+{% for post in site.posts %}
+<div class="entry">
+  <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+  <div class="author">
+    {{ post.author }}
+  </div>
+  <div class="date-posted">
+    {{ post.date | date: '%B %d, %Y %I:%M %p' }} PST
+  </div>
+  <div>
+    {{ post.content }}
+  </div>
+</div>
+{% endfor %}

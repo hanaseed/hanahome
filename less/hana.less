@@ -4,14 +4,7 @@
 //                      //
 //////////////////////////
 
-// variables
-@apple-font:    'Apple SD Gothic Neo';
-@other-font:    'Nanum Gothic';
-@fallback-font: 'Helvetica Neue', 'Helvetica', 'Arial';
-
-@font-chain: @apple-font,
-             @other-font,
-             @fallback-font;
+@import "variables.less";
 
 body {
   margin: 0px;
@@ -45,31 +38,42 @@ body {
 }
 
 #nav {
-  height:50px;
+  height:49px;
   background-color:#fff;
   opacity:0.7;
-}
-
-#nav li {
-  float:left;
-  list-style:none;
-  text-align:left;
-  font-weight:bold;
-}
-
-#nav li.narrow, #nav li.wide {
-  width:70px;
 }
 
 #nav ul {
   margin-right:10px;
   margin-left:auto;
-  width:400px;
+  width:430px;
+
+  a {
+    color:#000;
+    text-decoration:none;
+  }
+
+  li {
+    float:left;
+    list-style:none;
+    text-align:left;
+    font-weight:bold;
+  }
+
+  li.verynarrow, li.narrow, li.wide {
+    width:70px;
+  }
 }
 
-#nav ul a {
-  color:#000;
-  text-decoration:none;
+#blogtab {
+  float:right;
+  padding:15px;
+  background-color:#b63;
+  a {
+    font-weight:100;
+    text-decoration:none;
+    color:#fff;
+  }
 }
 
 .content {
@@ -168,40 +172,55 @@ and (max-device-width : 480px) {
   #nav {
     padding:0;
     margin:0;
-    height:33px;
+    height:30px;
     background-color:#eee;
     opacity:0.7;
   }
 
-  #nav li {
-    padding-left:0;
-    float:left;
-    text-indent:0;
-    list-style:none;
-    text-align:left;
-    font-weight:normal;
-    font-size:14px;
-  }
-
-  #nav li.narrow {
-    width:50px;
-  }
-
-  #nav li.wide {
-    width:70px;
-  }
-
   #nav ul {
     margin-top:8px;
-    margin-left:10px;
+    margin-left:0px;
     padding-left:10px;
     margin-right:auto;
+
+    a {
+      color:#000;
+      text-decoration:none;
+    }
+
+    li {
+      padding-left:0;
+      float:left;
+      text-indent:0;
+      list-style:none;
+      text-align:left;
+      font-weight:normal;
+      font-size:14px;
+    }
+
+    li.verynarrow {
+      width:40px;
+    }
+
+    li.narrow {
+      width:48px;
+    }
+
+    li.wide {
+      width:70px;
+    }
   }
 
-  #nav ul a {
-    color:#000;
-    text-decoration:none;
+  #blogtab {
+    float:right;
+    padding:5px 8px 5px 8px;
+    background-color:#842;
+    a {
+      font-size:14px;
+      font-weight:300;
+      text-decoration:none;
+      color:#fff;
+    }
   }
-
 
 }
