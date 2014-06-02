@@ -1,5 +1,7 @@
-name: Your New Jekyll Site
+name: Hana Seed Blog
+url: "http://hanaseed.org/blog"
+description: "Hana Seed Church Blog"
 markdown: redcarpet
+timezone: America/Los_Angeles
 exclude:
   - less
-
