@@ -17,7 +17,7 @@ layout: blog
   <div class="movement">
     <div>
     {% if page.next.url %}
-      <span class="glyphicon glyphicon-arrow-right"></span> <a href="{{page.next.url}}">{{page.next.date | | date: '%B %d, %Y'}} &lt;{{page.next.title}}&gt;</a>
+      <a href="{{page.next.url}}">{{page.next.date | | date: '%B %d, %Y'}} &lt;{{page.next.title}}&gt;</a> <span class="glyphicon glyphicon-arrow-right"></span> 
     {% endif %}
     </div>
     <div>
