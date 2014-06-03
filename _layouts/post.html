@@ -17,12 +17,12 @@ layout: blog
   <div class="movement">
     <div>
     {% if page.next.url %}
-      ⟶ <a href="{{page.next.url}}">{{page.next.date | | date: '%B %d, %Y'}} &lt;{{page.next.title}}&gt;</a>
+      <span class="glyphicon glyphicon-arrow-right"></span> <a href="{{page.next.url}}">{{page.next.date | | date: '%B %d, %Y'}} &lt;{{page.next.title}}&gt;</a>
     {% endif %}
     </div>
     <div>
     {% if page.previous.url %}
-      ⟵ <a href="{{page.previous.url}}">{{page.previous.date | | date: '%B %d, %Y'}} &lt;{{page.previous.title}}&gt;</a>
+      <span class="glyphicon glyphicon-arrow-left"></span> <a href="{{page.previous.url}}">{{page.previous.date | | date: '%B %d, %Y'}} &lt;{{page.previous.title}}&gt;</a>
     {% endif %}
     </div>
   </div>
