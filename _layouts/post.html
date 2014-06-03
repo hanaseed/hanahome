@@ -13,4 +13,18 @@ layout: blog
   <div>
     {{ content }}
   </div>
+
+  <div class="movement">
+    <div>
+    {% if page.next.url %}
+      &#10230 <a href="{{page.next.url}}">{{page.next.date | | date: '%B %d, %Y'}} &lt;{{page.next.title}}&gt;</a>
+    {% endif %}
+    </div>
+    <div>
+    {% if page.previous.url %}
+      &#10229 <a href="{{page.previous.url}}">{{page.previous.date | | date: '%B %d, %Y'}} &lt;{{page.previous.title}}&gt;</a>
+    {% endif %}
+    </div>
+  </div>
+
 </div>

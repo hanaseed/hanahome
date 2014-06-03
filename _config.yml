@@ -3,5 +3,7 @@ url: "http://hanaseed.org"
 description: "Hana Seed Church Blog"
 markdown: redcarpet
 timezone: America/Los_Angeles
+paginate: 1
+paginate_path: "/blog/page:num"
 exclude:
   - less
