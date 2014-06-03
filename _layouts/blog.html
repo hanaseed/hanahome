@@ -1,15 +1,19 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="author" content="Hana Seed Church">
   <meta name="keywords" content="bayarea, church">
   <meta name="repo" content="https://github.com/hanaseed/hanahome">
 
   <title>{{ page.title }}</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
   <style type="text/css">
   @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -19,7 +23,11 @@
 </head>
 <body>
 
-<div class="cover"><img src="/img/bell.jpg"></div>
+<div class="cover"><a href="/blog"><img src="/img/dot.png" id="coverpic"></a></div>
+
+<div class="linkbar">
+  <span class="glyphicon glyphicon-home menu"></span> <a href="/" class="menu">교회홈</a>
+</div>
 
 <div id="content">
 <div class="readable">
@@ -39,6 +47,19 @@
   </div>
 </div>
 </div>
+
+<script>
+
+  $(document).ready(function() {
+    var w = $(window).width();
+    var picsource = "/img/fire.jpg";
+    if (w <= 480) {
+      picsource = "/img/fire-mobile.jpg";
+    }
+    $('#coverpic').attr('src',picsource);
+  });
+
+</script>
 
 </body>
 </html>
