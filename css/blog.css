@@ -41,6 +41,12 @@ h2 a {
 .entry img {
   width: 100%;
 }
+.entry .comments {
+  text-align: right;
+}
+.entry .comments a {
+  text-decoration: underline;
+}
 .menu {
   color: #fff;
 }
