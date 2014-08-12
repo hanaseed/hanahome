@@ -1,5 +1,5 @@
-hanahome
-========
+하나의 씨앗 교회 홈
+===================
 
 jekyll based home page for hanaseed.org
 
