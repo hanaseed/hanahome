@@ -22,3 +22,7 @@ jekyll serve -w
 ```
 
 After lanuching locally, you can view the website via http://0.0.0.0:4000
+
+### Use LESS
+
+The CSS for ths site has been generated with [LESS](http://lesscss.org/). Please refer to ```/less``` directory and use LESS compiler to produce CSS.
