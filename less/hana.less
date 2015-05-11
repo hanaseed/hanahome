@@ -137,7 +137,7 @@ body {
   width:100%;
 }
 
-.worship {
+.worship, .location {
   margin-top:50px;
   height:auto;
   width:100%;
@@ -146,6 +146,11 @@ body {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+  .shift5  { margin-left:-5%; }
+  .shift10 { margin-left:-10%; }
+  .shift15 { margin-left:-15%; }
+  .shift20 { margin-left:-20%; }
+
   .info p {
     font-weight:100;
   }
@@ -166,13 +171,22 @@ and (max-device-width : 480px) {
     width:auto;
     height: 300px;
   }
+  .location {
+    margin-top:10px;
+    width:auto;
+    height:300px;
+  }
+  .worship {
+    margin-top:10px;
+    width:auto;
+    height:260px;
+  }
   .pastoran {
     margin-left:-20%;
   }
   .gather {
-    width:120%;
-    height:auto;
-    margin-left:-20%;
+    height:260px;
+    margin-left:-15%;
   }
 
   #nav {
