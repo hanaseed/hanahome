@@ -67,6 +67,14 @@
     var h = $(window).height();
     var w = $(window).width();
 
+    var random = function(owlSelector) {
+      owlSelector.children().sort(function(){
+          return Math.round(Math.random()) - 0.5;
+      }).each(function(){
+        $(this).appendTo(owlSelector);
+      });
+    };
+
     if (isMobile())
     {
       var ratio = parseFloat(w) / parseFloat(h);
@@ -91,7 +99,10 @@
     $('.content').css('margin-top', h + 'px');
     $('.carousel').owlCarousel({
       "singleItem":true,
-      "slideSpeed": 300
+      "slideSpeed": 300,
+      "beforeInit": function(el) {
+        random(el);
+      }
     });
 
   });
