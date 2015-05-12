@@ -1,16 +1,19 @@
+---
+---
+
 //////////////////////////
 //                      //
 //  Hana Seed Church <3 //
 //                      //
 //////////////////////////
 
-@import "variables.less";
+@import "variables";
 
 body {
   margin: 0px;
   padding: 0px;
   background-color:#fff;
-  font-family: @font-chain;
+  font-family: $font-chain;
 
   background-attachment: fixed;
   background-image: url('../img/front-optimized.jpg');
