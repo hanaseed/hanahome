@@ -4,12 +4,5 @@ $fallback-font: 'Helvetica Neue', 'Helvetica', 'Arial';
 
 $font-chain: $apple-font, $other-font, $fallback-font;
 
-@mixin shift($by) {
-  margin-left: $by;
-}
-
-@mixin img-auto-adjust($height) {
-  margin-top:10px;
-  width:auto;
-  height: $height;
-}
+$room-normal: 10px;
+$room-wide:   50px;

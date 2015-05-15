@@ -8,6 +8,7 @@
 ///////////////////////////////
 
 @import "variables";
+@import "mixins";
 
 body {
   margin: 0px;
@@ -79,12 +80,10 @@ body {
 }
 
 .content {
-  width:100%;
-  margin-left:auto;
-  margin-right:auto;
   padding-bottom:100px;
   margin-top:1000px;
   background-color:#fff;
+  @include block-center(100%);
 }
 
 .frontimg {
@@ -100,9 +99,7 @@ body {
   p {
     margin-top:10px;
     font-weight:200;
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
+    @include block-center(90%);
   }
 
   h3 {
@@ -113,11 +110,9 @@ body {
 }
 
 .profile {
-  width:500px;
-  margin-left:auto;
-  margin-right:auto;
   text-align:center;
   font-weight:200;
+  @include block-center(500px);
 }
 
 .contain {
