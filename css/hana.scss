@@ -1,11 +1,11 @@
 ---
 ---
 
-//////////////////////////
-//                      //
-//  Hana Seed Church <3 //
-//                      //
-//////////////////////////
+///////////////////////////////
+//                           //
+//  Hana Seed Church SCSS <3 //
+//                           //
+///////////////////////////////
 
 @import "variables";
 
@@ -44,27 +44,26 @@ body {
   height:49px;
   background-color:#fff;
   opacity:0.7;
-}
 
-#nav ul {
-  margin-right:10px;
-  margin-left:auto;
-  width:430px;
+  ul {
+    margin-right:10px;
+    margin-left:auto;
+    width:430px;
+    a {
+      color:#000;
+      text-decoration:none;
+    }
 
-  a {
-    color:#000;
-    text-decoration:none;
-  }
+    li {
+      float:left;
+      list-style:none;
+      text-align:left;
+      font-weight:bold;
+    }
 
-  li {
-    float:left;
-    list-style:none;
-    text-align:left;
-    font-weight:bold;
-  }
-
-  li.verynarrow, li.narrow, li.wide {
-    width:70px;
+    li.verynarrow, li.narrow, li.wide {
+      width:70px;
+    }
   }
 }
 
@@ -121,26 +120,12 @@ body {
   font-weight:200;
 }
 
-.hope {
+.contain {
   width:100%;
   overflow:hidden;
 }
 
-.hopeimg {
-  width:100%;
-}
-
-.big {
-  width:100%;
-  overflow:hidden;
-}
-
-.bigimg {
-  margin-top:100px;
-  width:100%;
-}
-
-.worship, .location, .gather {
+.worship, .location, .gather, .pastor, .hopeimg {
   margin-top:50px;
   height:auto;
   width:100%;
@@ -149,48 +134,37 @@ body {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-  .shift5  { margin-left:-5%; }
-  .shift10 { margin-left:-10%; }
-  .shift15 { margin-left:-15%; }
-  .shift20 { margin-left:-20%; }
+
+  // shift that is only active for mobile
+  .mobile-shift5  { @include shift(-5%);  }
+  .mobile-shift10 { @include shift(-10%); }
+  .mobile-shift15 { @include shift(-15%); }
+  .mobile-shift20 { @include shift(-20%); }
+
+  // mobile images are height first, widht auto
+  // as opposed to width 100%, height auto
+  .worship  { @include img-auto-adjust(260px); }
+  .gather   { @include img-auto-adjust(260px); }
+  .pastor   { @include img-auto-adjust(300px); }
+  .location { @include img-auto-adjust(300px); }
 
   .info p {
     font-weight:100;
   }
+
   .logo {
     top:180px;
     left:50px;
   }
+
   .profile {
     width:90%;
     font-weight:100;
   }
+
   .hopeimg {
     width:150%;
     margin-left:-25%;
-  }
-  .bigimg {
-    margin-top:10px;
-    width:auto;
-    height: 300px;
-  }
-  .location {
-    margin-top:10px;
-    width:auto;
-    height:300px;
-  }
-  .worship {
-    margin-top:10px;
-    width:auto;
-    height:260px;
-  }
-  .pastoran {
-    margin-left:-20%;
-  }
-  .gather {
-    margin-top:10px;
-    height:260px;
-    width:auto;
   }
 
   #nav {

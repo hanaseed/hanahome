@@ -1,5 +1,15 @@
-$apple-font:    'Georgias', 'Apple SD Gothic Neo';
+$apple-font:    'Apple SD Gothic Neo';
 $other-font:    'Nanum Gothic';
 $fallback-font: 'Helvetica Neue', 'Helvetica', 'Arial';
 
 $font-chain: $apple-font, $other-font, $fallback-font;
+
+@mixin shift($by) {
+  margin-left: $by;
+}
+
+@mixin img-auto-adjust($height) {
+  margin-top:10px;
+  width:auto;
+  height: $height;
+}
