@@ -102,10 +102,20 @@ body {
     @include block-center(90%);
   }
 
+  dl {
+    margin-top:25px;
+  }
+
   h3 {
     margin-top:50px;
     font-weight:300;
     margin-bottom:5px;
+    color: #491;
+  }
+
+  h2 {
+    margin-top:50px;
+    font-weight:200;
   }
 }
 
@@ -119,6 +129,30 @@ body {
   width:100%;
   overflow:hidden;
 }
+
+.values {
+  @include block-center(450px);
+
+  h3 {
+    font-size:1.5em;
+    margin-top:50px;
+  }
+
+  dt {
+    font-weight:400;
+    font-size:1.2em;
+    text-align:left;
+    margin-bottom:3px;
+  }
+  dd {
+    font-weight:200;
+    text-align:left;
+    margin-left:0px;
+    margin-bottom:30px;
+  }
+}
+
+
 
 .worship, .location, .gather, .pastor, .hopeimg {
   margin-top:50px;
@@ -160,6 +194,28 @@ and (max-device-width : 480px) {
   .hopeimg {
     width:150%;
     margin-left:-25%;
+  }
+
+  .values {
+    @include block-center(90%);
+
+    h3 {
+      font-size:1.5em;
+      margin-top:50px;
+    }
+
+    dt {
+      font-weight:200;
+      font-size:1.2em;
+      text-align:left;
+      margin-bottom:3px;
+    }
+    dd {
+      font-weight:100;
+      text-align:left;
+      margin-left:0px;
+      margin-bottom:30px;
+    }
   }
 
   #nav {
