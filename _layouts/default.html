@@ -73,8 +73,7 @@
       });
     };
 
-    if (isMobile())
-    {
+    if (isMobile()) {
       var ratio = parseFloat(w) / parseFloat(h);
 
       $('body').css('background-position', 'top center');
@@ -96,6 +95,7 @@
     // next content to follow should skip over by a screenful
     $('.content').css('margin-top', h + 'px');
     $('.carousel').owlCarousel({
+      "navigation": true,
       "singleItem":true,
       "slideSpeed": 300,
       "beforeInit": function(el) {
