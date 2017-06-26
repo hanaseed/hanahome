@@ -14,6 +14,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-color:#fff;
+  color: $black;
   font-family: $font-chain;
 
   background-attachment: fixed;
@@ -23,6 +24,7 @@ body {
 
   background-size:cover;
   z-index:-1;
+  letter-spacing: 0.1px;
 }
 
 .logo {
@@ -41,41 +43,44 @@ body {
   width: 100%;
 }
 
-#nav {
-  height:49px;
-  background-color:#fff;
-  opacity:0.7;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $white;
+  opacity: 0.8;
+  text-align: right;
+  font-size: 15px;
 
   ul {
-    margin-right:10px;
-    margin-left:auto;
-    width:430px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     a {
-      color:#000;
+      color: #000;
       text-decoration:none;
+
+      &:hover {
+        font-weight: 700;
+      }
     }
 
     li {
-      float:left;
-      list-style:none;
-      text-align:left;
-      font-weight:bold;
+      list-style: none;
+      display: inline-block;
+      padding: 14px;
     }
 
-    li.verynarrow, li.narrow, li.wide {
-      width:70px;
+    .nav-blog-item {
+      background-color: $hanaseed-green;
+      margin-left: 8px;
+      a {
+        color: $white;
+        font-weight: 500;
+      }
     }
-  }
-}
-
-#blogtab {
-  float:right;
-  padding:15px;
-  background-color:#482;
-  a {
-    font-weight:400;
-    text-decoration:none;
-    color:#fff;
   }
 }
 
@@ -99,6 +104,7 @@ body {
   p {
     margin-top:10px;
     font-weight:200;
+    line-height: 24px;
     @include block-center(90%);
   }
 
@@ -106,20 +112,30 @@ body {
     margin-top:25px;
   }
 
+  h2 {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 1px;
+  }
+
   h3 {
     margin-top:50px;
     font-weight:300;
     margin-bottom:5px;
-    color: #491;
+    color: $hanaseed-green;
   }
 
-  h2 {
-    margin-top:50px;
-    font-weight:200;
+  .info-sub-heading {
+    font-size: 24px;
+  }
+
+  .info-heading-top {
+    font-weight: 100;
   }
 }
 
-.profile {
+p.profile {
   text-align:center;
   font-weight:200;
   @include block-center(500px);
@@ -152,7 +168,9 @@ body {
   }
 }
 
-
+.hanaseed-green {
+  color: $hanaseed-green;
+}
 
 .worship, .location, .gather, .pastor, .hopeimg {
   margin-top:50px;
