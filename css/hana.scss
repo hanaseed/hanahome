@@ -138,7 +138,8 @@ body {
 p.profile {
   text-align:center;
   font-weight:200;
-  @include block-center(500px);
+  max-width: 450px;
+  margin: 15px auto;
 }
 
 .contain {
@@ -147,7 +148,9 @@ p.profile {
 }
 
 .values {
-  @include block-center(450px);
+  // @include block-center(450px);
+  max-width: 500px;
+  margin: 0 auto;
 
   h3 {
     font-size:1.5em;
@@ -211,6 +214,11 @@ and (max-device-width : 480px) {
   .pastor   { @include img-auto-adjust(300px); }
   .location { @include img-auto-adjust(300px); }
 
+  // nested to override specifivity
+  .nav ul li.nav-mobile-hide {
+    display: none;
+  }
+
   .info p {
     font-weight:100;
   }
@@ -218,6 +226,7 @@ and (max-device-width : 480px) {
   .logo {
     top:180px;
     left:50px;
+    width: 70%;
   }
 
   .profile {
