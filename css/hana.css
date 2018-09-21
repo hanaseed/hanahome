@@ -1,0 +1,315 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    color: #424242;
+    font-family: "San Francisco", "Apple SD Gothic Neo", "Nanum Gothic", "Helvetica Neue", "Helvetica", "Arial";
+    background-attachment: fixed;
+    background-image: url("../img/front-optimized.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    letter-spacing: 0.1px
+}
+
+.logo {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    z-index: 10;
+    width: 50%
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.8;
+    text-align: right;
+    font-size: 15px
+}
+
+.nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.nav ul a {
+    color: #000;
+    text-decoration: none
+}
+
+.nav ul a:hover {
+    font-weight: 700
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 14px
+}
+
+.nav ul .nav-green-item {
+    background-color: #482;
+    margin-left: 8px
+}
+
+.nav ul .nav-green-item a {
+    color: #fff;
+    font-weight: 500
+}
+
+.content {
+    padding-bottom: 100px;
+    margin-top: 1000px;
+    background-color: #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.frontimg {
+    max-width: 100%;
+    height: auto
+}
+
+.info {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 100px
+}
+
+.info p {
+    margin-top: 10px;
+    font-weight: 200;
+    line-height: 24px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.info dl {
+    margin-top: 25px
+}
+
+.info h2 {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 1px
+}
+
+.info h3 {
+    margin-top: 50px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #482
+}
+
+.info .info-sub-heading {
+    font-size: 24px
+}
+
+.info .info-heading-top {
+    font-weight: 100
+}
+
+p.profile {
+    text-align: center;
+    font-weight: 200;
+    max-width: 450px;
+    margin: 15px auto
+}
+
+.contain {
+    width: 100%;
+    overflow: hidden
+}
+
+.values {
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.values h3 {
+    font-size: 1.5em;
+    margin-top: 50px
+}
+
+.values dt {
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 3px
+}
+
+.values dd {
+    font-weight: 200;
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 30px
+}
+
+.hanaseed-green {
+    color: #482
+}
+
+.worship,
+.location,
+.gather,
+.pastor,
+.hopeimg {
+    margin-top: 50px;
+    height: auto;
+    width: 100%
+}
+
+.social-icon-container {
+    margin-top: 30px
+}
+
+.social-icon {
+    width: 30px;
+    display: inline-block;
+    padding: 8px 8px 2px 8px;
+    opacity: 0.7
+}
+
+.social-icon:hover {
+    background-color: #eeeeee;
+    border-radius: 4px
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .mobile-shift5 {
+        margin-left: -5%
+    }
+    .mobile-shift10 {
+        margin-left: -10%
+    }
+    .mobile-shift15 {
+        margin-left: -15%
+    }
+    .mobile-shift20 {
+        margin-left: -20%
+    }
+    .worship {
+        margin-top: 10px;
+        width: auto;
+        height: 260px
+    }
+    .gather {
+        margin-top: 10px;
+        width: auto;
+        height: 260px
+    }
+    .pastor {
+        margin-top: 10px;
+        width: auto;
+        height: 300px
+    }
+    .location {
+        margin-top: 10px;
+        width: auto;
+        height: 300px
+    }
+    .nav ul li.nav-mobile-hide {
+        display: none
+    }
+    .info p {
+        font-weight: 100
+    }
+    .logo {
+        top: 180px;
+        left: 50px;
+        width: 70%
+    }
+    .profile {
+        width: 90%;
+        font-weight: 100
+    }
+    .hopeimg {
+        width: 150%;
+        margin-left: -25%
+    }
+    .values {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .values h3 {
+        font-size: 1.5em;
+        margin-top: 50px
+    }
+    .values dt {
+        font-weight: 200;
+        font-size: 1.2em;
+        text-align: left;
+        margin-bottom: 3px
+    }
+    .values dd {
+        font-weight: 100;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 30px
+    }
+    #nav {
+        padding: 0;
+        margin: 0;
+        height: 30px;
+        background-color: #eee;
+        opacity: 0.7
+    }
+    #nav ul {
+        margin-top: 8px;
+        margin-left: 0px;
+        padding-left: 10px;
+        margin-right: auto
+    }
+    #nav ul a {
+        color: #000;
+        text-decoration: none
+    }
+    #nav ul li {
+        padding-left: 0;
+        float: left;
+        text-indent: 0;
+        list-style: none;
+        text-align: left;
+        font-weight: normal;
+        font-size: 14px
+    }
+    #nav ul li.verynarrow {
+        width: 40px
+    }
+    #nav ul li.narrow {
+        width: 48px
+    }
+    #nav ul li.wide {
+        width: 70px
+    }
+    #blogtab {
+        float: right;
+        padding: 5px 8px 5px 8px;
+        background-color: #482
+    }
+    #blogtab a {
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+        color: #fff
+    }
+}
