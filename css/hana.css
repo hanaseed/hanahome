@@ -119,6 +119,10 @@ body {
     color: #482
 }
 
+.info .email {
+    margin-bottom: 20px;
+}
+
 .info .info-sub-heading {
     font-size: 24px
 }
