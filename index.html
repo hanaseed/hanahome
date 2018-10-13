@@ -61,7 +61,6 @@
 </div>
 
 <div class="owl-carousel carousel">
-  <div class="contain"><img src="img/location-01.jpg" class="location mobile-shift10"></div>
   <div class="contain"><img src="img/location-02.jpg" class="location mobile-shift10"></div>
   <div class="contain"><img src="img/location-03.jpg" class="location mobile-shift10"></div>
 </div>
@@ -92,8 +91,6 @@
 
 <div class="owl-carousel carousel">
   <div class="contain"><img src="img/worship-02.jpg" class="worship mobile-shift10"></div>
-  <div class="contain"><img src="img/worship-03.jpg" class="worship mobile-shift15"></div>
-  <div class="contain"><img src="img/worship-04.jpg" class="worship mobile-shift10"></div>
   <div class="contain"><img src="img/worship-05.jpg" class="worship mobile-shift10"></div>
 </div>
 
@@ -115,7 +112,6 @@
 
 <div class="owl-carousel carousel">
   <div class="contain"><img src="img/pastor-couple-1.jpg" class="pastor mobile-shift20"></div>
-  <div class="contain"><img src="img/pastoran.jpg" class="pastor mobile-shift20"></div>
   <div class="contain"><img src="img/pastor-portrait.jpg" class="pastor mobile-shift20"></div>
 </div>
 
@@ -134,9 +130,7 @@
 </div>
 
 <div class="owl-carousel carousel">
-  <div class="contain"><img src="img/gather-01.jpg" class="gather mobile-shift15"></div>
   <div class="contain"><img src="img/hanaseed-book.jpg" class="gather mobile-shift15"></div>
-  <div class="contain"><img src="img/gather-03.jpg" class="gather"></div>
   <div class="contain"><img src="img/retreat-2017.jpg" class="gather"></div>
 </div>
 
@@ -194,11 +188,6 @@
     <div class="email">
       <a href="mailto:sssam95@gmail.com">sssam95@gmail.com</a>
     </div>
-
-    <p>
-      또한 <a href="/subscribe">메일 리스트</a>에 가입하시면<br>
-      정기적인 소식지를 받으실 수 있습니다
-    </p>
 
     <div class="social-icon-container">
       <div class="social-icon">
@@ -286,9 +275,9 @@
     // next content to follow should skip over by a screenful
     $('.content').css('margin-top', h + 'px');
     $('.carousel').owlCarousel({
-      "navigation": true,
-      "singleItem":true,
-      "slideSpeed": 300,
+      navigation: true,
+      singleItem: true,
+      slideSpeed: 300,
       "beforeInit": function(el) {
         random(el);
       }
