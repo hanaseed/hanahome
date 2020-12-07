@@ -131,6 +131,10 @@ body {
     font-weight: 100
 }
 
+.info .podcast {
+    margin-top: 20px;
+}
+
 p.profile {
     text-align: center;
     font-weight: 200;
