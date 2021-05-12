@@ -86,6 +86,20 @@ body {
     height: auto
 }
 
+.forum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+.forum img {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
 .info {
     background-color: #fff;
     text-align: center;
@@ -218,6 +232,9 @@ p.profile {
         margin-top: 10px;
         width: auto;
         height: 260px
+    }
+    .forum {
+        padding-bottom: 50px;
     }
     .gather {
         margin-top: 10px;
